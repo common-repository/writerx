@@ -1,0 +1,82 @@
+/* Plugin page style */
+
+#wpwrap {
+    background: #f7f0f0;
+}
+
+#wpcontent {
+    padding-left: 0 !important;
+}
+
+.writerx-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.writerx-inner {
+    padding: 10vh;
+    text-align: center;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.writerx-section {
+    position: relative;
+}
+
+.writerx-inner h3 {
+    margin: 0 0 50px 0;
+    font-size: 2em;
+}
+
+.writerx-inner h4 {
+    margin: 0 0 20px 0;
+    font-size: 1.4em;
+}
+
+.block-code {
+    padding: 5px 10px;
+    font-size: 1.4em;
+    border: 1px solid #f7f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    line-height: 1;
+    background: #fff;
+    transition: 0.4s all;
+}
+
+.block-code:hover {
+    background: #f7f0f0;
+}
+
+.saved {
+    position: absolute;
+    right: -30px;
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+@media screen and (max-width: 782px) {
+    .writerx-inner {
+        width: 96%;
+        padding: 10vh 0;
+    }
+
+    .writerx-wrapper {
+        min-height: 0;
+    }
+
+    .block-code {
+        font-size: 1.3em;
+    }
+
+    .saved {
+        right: -11px;
+        margin-right: 50%;
+        bottom: -40px;
+    }
+}
